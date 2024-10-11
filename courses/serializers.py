@@ -4,4 +4,4 @@ from .models import Course
 class CourseSerializer(serializers.HyperlinkedModelSerializer):
 	class Meta:
 		model = Course
-		fields = ('id', 'url' ,'name', 'language', 'price')
+		fields = ('id', 'url' ,'name', 'language', 'price') // added api url
