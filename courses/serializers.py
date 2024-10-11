@@ -1,7 +1,9 @@
+#This is our serializers page
 from rest_framework import serializers
 from .models import Course
+
 
 class CourseSerializer(serializers.HyperlinkedModelSerializer):
 	class Meta:
 		model = Course
-		fields = ('id', 'url' ,'name', 'language', 'price') <!-- added api url-->
+		fields = ('id', 'url' ,'name', 'language', 'price') 
